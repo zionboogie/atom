@@ -50,6 +50,28 @@
 #		'body': """
 #		"""
 
+'.source.css':
+	# CompassとリセットCSSの読み込み
+	'CompassとリセットCSSの読み込み':
+		'prefix': 'zscss'
+		'body': """
+@charset "UTF-8";
+@import "compass";
+// CompassのHTML5用リセットCSS読み込み
+@import "compass/reset";
+		"""
+	# コメント（大）を挿入
+	'コメント（大）を挿入':
+		'prefix': 'zcomment'
+		'body': """
+/*#########################################################
+
+$1
+
+#########################################################*/
+		"""
+
+
 # ▼JavaScript
 #'.source.js':
 #	'TEST':
