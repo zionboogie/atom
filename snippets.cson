@@ -18,9 +18,9 @@
 # https://github.com/bevry/cson#what-is-cson
 
 # ▼HTML
-'.text.html.basic':
+'.text.html.basic,.text.html.php':
 	# OGP
-	'OGP':
+	'OGPの挿入':
 		'prefix': 'zogp'
 		'body': """
 	<meta property="og:title" content="$1">
@@ -33,14 +33,24 @@
 		"""
 
 	# jQuery1.1
-	'jQuery1':
+	'jQuery1系の挿入(CDN)':
 		'prefix': 'zjquery1'
 		'body': '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>'
 
 	# jQuery2.1
-	'jQuery2':
+	'jQuery2系の挿入(CDN)':
 		'prefix': 'zjquery2'
 		'body': '<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>'
+
+	# jQuery2.1
+	'jQueryの$(function(){})を挿入':
+		'prefix': 'zjqfunction'
+		'body': """
+$(function(){
+
+});
+		"""
+
 
 
 # ▼CSS
