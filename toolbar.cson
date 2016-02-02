@@ -1,0 +1,51 @@
+[
+	# githubサイトへ遷移
+	{
+		type: "url"
+		icon: "octoface"
+		url: "http://github.com"
+		tooltip: "Github Page"
+	}
+	# project-managerパッケージの起動
+	{
+		type: "button"
+		icon: "repo"
+		callback: "project-manager:toggle"
+		tooltip: "プロジェクトを開く"
+	}
+	# remote-ftpパッケージのパネル開閉
+	{
+		type: "button"
+		icon: "cloud-upload"
+		callback: "remote-ftp:toggle"
+		tooltip: "リモートパネルの開閉"
+	}
+	# remote-ftpパッケージのリモートからの切断
+	{
+		type: "button"
+		icon: "circle-slash"
+		callback: "remote-ftp:disconnect"
+		tooltip: "リモートから切断"
+	}
+	# atom-beautifyパッケージの実行
+	{
+		type: "button"
+		icon: "code"
+		callback: "atom-beautify:beautify-editor"
+		tooltip: "テキストの整形"
+		iconset: "fa"
+		mode: "atom-text-editor"
+	}
+	# markdown-previewのトグル（Markdownファイルでのみ表示）
+	{
+		type: "button"
+		icon: "markdown"
+		callback: "markdown-preview:toggle"
+		tooltip: "Markdown Preview"
+		hide: "!Markdown"
+	}
+	# 区切り線
+	{
+		type: "spacer"
+	}
+]
