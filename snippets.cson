@@ -50,14 +50,6 @@ $(function(){
 
 });
 		"""
-	# HTC用 終わったら削除
-	'HTC用ヘッダ':
-		'prefix': 'zhtc_header'
-		'body': '<!--#include virtual="/dev/header.txt" -->'
-	# HTC用 終わったら削除
-	'HTC用フッタ':
-		'prefix': 'zhtc_footer'
-		'body': '<!--#include virtual="/dev/footer.txt" -->'
 
 
 # ▼CSS
@@ -97,8 +89,17 @@ $1
 		"""
 
 # ▼JavaScript
-#'.source.js':
+'.source.js':
 #	'TEST':
 #		'prefix': ''
 #		'body': """
 #		"""
+
+	# jsコメント
+	'コメント（小）を挿入':
+		'prefix': 'zjcomment'
+		'body': """
+//-------------------------------------------------------------------
+// $1
+//-------------------------------------------------------------------
+"""
